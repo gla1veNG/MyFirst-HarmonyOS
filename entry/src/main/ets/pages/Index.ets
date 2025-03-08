@@ -1,3 +1,5 @@
+import { SubHeader } from '@ohos.arkui.advanced.SubHeader';
+
 @Entry
 @Component
 struct Index {
@@ -42,20 +44,11 @@ struct Index {
     // .width('100%')
     // .padding(20)
 
-    Column() {
-      Text('小龙女')
-        .backgroundColor(Color.Pink) //
-          // .padding(50)// 四个方向都设置
-          // .padding({
-          //   left:30,
-          //   top:50,
-          //   right:15
-          // }
-          // .margin(50)
-        .margin({
-          left:30,
-          top:50
-        })
-    }
+Stack({alignContent:Alignment.Bottom}){
+  Text('da').width(250).height(250).backgroundColor(Color.Blue)
+  Text('x').width(150).height(150).backgroundColor(Color.Red)
+  Text('z').width(50).height(50).backgroundColor(Color.Orange)
+}
+
   }
 }
